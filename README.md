@@ -35,7 +35,7 @@ el | String\|HTMLElement* | null | 	Main element which, picker is created below.
 inputEl | String\|HTMLElement* | null | Input element.
 toggleEl | String\|HTMLElement* | null | Toggle element.
 type | String | "DATE" | Sets picker type. _(DATE, HOUR, DATEHOUR)_
-dateType | String | "DD/MM/YYYY" | 	Sets date type. _(DD/MM/YYYY, MM/DD/YYYY)_
+dateType | String | "DD/MM/YYYY" | 	Sets date type. _(DD/MM/YYYY, MM/DD/YYYY, YYYY/MM/DD)_
 hourType | String | "12" | Sets hour type. _(12, 24)_
 allowEmpty | Boolean | true | A boolean value that indicates whether null and empty value are allowed or not.
 showButtons | Boolean | false | A boolean value that indicates whether the buttons are visible or not.
