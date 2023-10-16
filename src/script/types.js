@@ -3,6 +3,7 @@ export const HOUR = 'HOUR';
 export const DATEHOUR = 'DATEHOUR';
 export const DMY = 'DD/MM/YYYY';
 export const MDY = 'MM/DD/YYYY';
+export const YMD = 'YYYY/MM/DD';
 export const $12 = '12';
 export const $24 = '24';
 export const MONTH = 'MONTH';
