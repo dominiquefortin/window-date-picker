@@ -833,8 +833,12 @@ export default class WindowDatePicker {
         if(this.type != T.HOUR) {
             if(this.dateType == T.DMY) {
                 txt = `${Util.renderNumber(value.day)}/${Util.renderNumber(value.month)}/${value.year}`;
-            } else {
+            } else if(this.dateType == T.MDY) {
                 txt = `${Util.renderNumber(value.month)}/${Util.renderNumber(value.day)}/${value.year}`;
+            } else if(this.dateType == T.YMD) { 
+                txt = `${value.year}/${Util.renderNumber(value.day)}/${Util.renderNumber(value.month)}`;
+            } else {
+                txt = `${Util.renderNumber(value.day)}/${Util.renderNumber(value.month)}/${value.year}`;
             }
         }
 
@@ -909,8 +913,12 @@ export default class WindowDatePicker {
                 s[2] = s[2].split(' ')[0];
                 if(this.dateType == T.DMY) {
                     s = [s[2], s[1], s[0]];
-                } else {
+                } else if(this.dateType == T.MDY) {
                     s = [s[2], s[0], s[1]];
+                } else if(this.dateType == T.YMD) {
+                    s = [s[0], s[1], s[2]];
+                } else {
+                    s = [s[2], s[1], s[0]];
                 }
 
                 d = `${Util.renderNumber(s[0], 4)}-${Util.renderNumber(s[1])}-${Util.renderNumber(s[2])}`;
